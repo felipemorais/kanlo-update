@@ -2,3 +2,6 @@ node_modules
 npm-debug.log
 tmp
 kanlo-auth.json
+
+#ignoring test, not ready yet
+test
