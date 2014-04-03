@@ -2,6 +2,8 @@
 
 > Download and Upload Components to Kanlo
 
+
+
 ```shell
 npm install grunt-kanlo-update --save-dev
 ```
@@ -9,7 +11,7 @@ npm install grunt-kanlo-update --save-dev
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-kanlo-update');
+grunt.loadNpmTasks('kanlo-update');
 ```
 
 ## The "kanlo_update" task
@@ -30,6 +32,13 @@ grunt.initConfig({
 })
 ```
 
+criar o arquivo kanlo-auth.json com os dados de login, lembre-se de colocar o arquivo no .gitignore para evitar que seja comitado e sua senha fique pública.
+
+{
+  "store": "minhaloja", //minhaloja.kanlo.com.br
+  "username": "admin@dominio.com.br",
+  "password": "password"
+}
 ### Options
 
 #### options.separator
