@@ -66,7 +66,7 @@ casper.test.begin('assertPull()', function(test) {
 				//Verifique se tem permissao para editar o ID
 				this.test.assertTruthy((html.name && html.content), 'ID Encontrado e dados capturados');
 
-				fs.write('./components/' + item + '__' + html.name, html.content, 'w');
+				fs.write(componentDir + '/' + item + '__' + html.name, html.content, 'w');
 				importComponent(++index);
 
 			});	
