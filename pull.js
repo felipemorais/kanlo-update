@@ -32,8 +32,8 @@ if(casper.cli.get('username') || casper.cli.get('password')) {
 
 casper.test.begin('assertPull()', function(test) {
 
-	casper.start('http://' + store + '.kanlo.com.br/admin/login/auth', function() {
-		//this.echo(this.getTitle());
+	casper.start('http://' + store + '/admin/login/auth', function() {
+		this.echo(this.getTitle());
 		this.fill('#loginForm', { 
 			'j_username': username,
 			'j_password': password
@@ -41,7 +41,8 @@ casper.test.begin('assertPull()', function(test) {
 	});
 
 	casper.then(function() {
-		isLogged = ('Admin - minimalia' == this.getTitle());
+		console.log(this.getTitle(), this.getTitle().indexOf('Admin'))
+		isLogged = (this.getTitle().indexOf('Admin') === 0);
 	    this.test.assertTruthy(isLogged, 'usuario logado') ;
 	});
 
@@ -51,7 +52,7 @@ casper.test.begin('assertPull()', function(test) {
 		if(!item){
 			return false;
 		}
-		var url = 'https://' + store + '.kanlo.com.br/admin/component/edit/'+item;
+		var url = 'http://' + store + '/admin/component/edit/'+item;
 
 		casper.thenOpen(url, function(){
 

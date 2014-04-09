@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    kanlo_auth: grunt.file.readJSON('kanlo-auth.json'),
+    kanlo_auth: grunt.file.readJSON('bseller-auth.json'),
 
     kanlo_update: {
       options:{

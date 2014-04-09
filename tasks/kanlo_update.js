@@ -35,6 +35,7 @@ module.exports = function(grunt) {
       log.error('[options.method] não defido.');
       return done(false);
     }
+    
     command += ' ' + __dirname + '/../' + options.method;
     command += ' --store=' + options.store;
     command += ' --password=' + options.password 

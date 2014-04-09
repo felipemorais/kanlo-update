@@ -1,7 +1,8 @@
 node_modules
 npm-debug.log
 tmp
-kanlo-auth.json
+bseller-auth.json
+components
 
 #ignoring test, not ready yet
 test
