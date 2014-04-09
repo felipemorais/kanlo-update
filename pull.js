@@ -41,7 +41,6 @@ casper.test.begin('assertPull()', function(test) {
 	});
 
 	casper.then(function() {
-		console.log(this.getTitle(), this.getTitle().indexOf('Admin'))
 		isLogged = (this.getTitle().indexOf('Admin') === 0);
 	    this.test.assertTruthy(isLogged, 'usuario logado') ;
 	});

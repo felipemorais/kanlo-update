@@ -78,7 +78,7 @@ casper.test.begin('assertPush()', function(test) {
 		if(!item){
 			return false;
 		}
-		var url = 'https://' + store + '/admin/component/update';
+		var url = 'http://' + store + '/admin/component/update';
 
 		
 		casper.open(url, {
