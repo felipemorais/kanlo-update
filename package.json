@@ -1,7 +1,7 @@
 {
   "name": "grunt-kanlo-update",
   "description": "Download and Upload Components to Kanlo",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "",
   "author": {
     "name": "Felipe Morais",
