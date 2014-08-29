@@ -44,12 +44,13 @@ grunt.initConfig({
 ```
 Create a file to your data store called kanlo-auth.json at the same path that package.js
 Remember to add into .gitignore file
-
+```js
 {
   "store": "minhaloja", //minhaloja.kanlo.com.br
   "username": "admin@dominio.com.br",
   "password": "password"
 }
+```
 
 ###Usage
 
@@ -60,7 +61,7 @@ grunt kanlo_update:push:id[,id]
 ```
 
 ###Tricks
-Create a task to do pushAll and pullAll
+Create a task to pushAll and pullAll
 
 ```js
 grunt.registerTask('pullAll', [
